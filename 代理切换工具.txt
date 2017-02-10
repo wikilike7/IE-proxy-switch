@@ -1,10 +1,11 @@
 @echo off
 title 代理切换工具
+color 1 7
 echo 1 == 香港代理
 echo 2 == 大陆代理
 echo 3 == 无代理
 
-set /p user_choose=请选择对应的数字： 
+set /p user_choose=请选择对应的数字并按回车： 
 if "%user_choose%"=="1" goto hk_proxy
 if "%user_choose%"=="2" goto china_proxy
 if "%user_choose%"=="3" goto no_proxy
